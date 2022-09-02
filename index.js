@@ -43,3 +43,18 @@ function displayMovies(data) {
     
   });
 }
+
+
+// function addReviews( e ) {
+//   e.preventDefault();
+// }
+
+document.querySelector("#form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const searchTerm = search.value;
+  if (searchTerm) {
+    getMovies(`${searchURL}&query=${searchTerm}`);
+  } else {
+    getMovies(api_URL);
+  }
+});
