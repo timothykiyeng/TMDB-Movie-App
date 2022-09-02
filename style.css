@@ -52,3 +52,15 @@
   font-size: x-large;
   font-weight: 800;
 }
+
+.overview {
+  text-decoration-color: none;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: start;
+}
+
+.card-image{
+  border-radius: 25px;
+  justify-content: space-between;
+}
