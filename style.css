@@ -64,3 +64,18 @@
   border-radius: 25px;
   justify-content: space-between;
 }
+.card-image:hover {
+  transition: .5s;
+  transform: rotate(360deg);
+  }
+
+.movie {
+  position: relative;
+  width: 30rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: none;
+  
+  place-content: center;
+  justify-content: space-evenly;
+}
