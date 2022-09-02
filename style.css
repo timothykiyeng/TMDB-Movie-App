@@ -40,3 +40,15 @@
   
   
 }
+.search:focus {
+  outline: 2;
+  background-color: var(--primary-color);
+
+}
+
+.search::placeholder {
+  color: #666;
+  font-family: inherit;
+  font-size: x-large;
+  font-weight: 800;
+}
