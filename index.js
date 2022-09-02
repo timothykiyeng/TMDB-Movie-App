@@ -12,3 +12,10 @@ function getMovies(url) {
       console.log(data);
     });
 }
+
+function displayMovies(data) {
+  main.innerHTML = "";
+  data.map((movie) => {
+    const { title, poster_path, vote_average , overview } = movie;
+    const movieEl = document.createElement("div");
+    movieEl.classList.add("movie");
