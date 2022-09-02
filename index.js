@@ -19,3 +19,23 @@ function displayMovies(data) {
     const { title, poster_path, vote_average , overview } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
+    movieEl.innerHTML = `
+    
+    <img class="card-image" src="${img_URL + poster_path}" alt="${title}">
+    
+      <div class="header"></div>
+      <div class="card-body"></div>
+      <div class="movie_desc">
+        <h3>${title}</h3>
+        </div>
+        <div justify-content-between>
+            <span id="rate-count" class="ratings">${vote_average}</span>
+            <br>
+            <div><button type="button" id="ratings-button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Review">Review</button></div>
+            <br>
+          </div>
+        <div id="overview">
+          <h3>Overview</h3> 
+          ${overview}
+        </div> 
+        `   
