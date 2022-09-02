@@ -79,3 +79,13 @@
   place-content: center;
   justify-content: space-evenly;
 }
+
+.card-body {
+  position: relative;
+  display: inline-block;
+  justify-content: space-evenly;
+
+}
+.movie_desc{
+  font-size: 20px;
+}
