@@ -39,3 +39,7 @@ function displayMovies(data) {
           ${overview}
         </div> 
         `   
+        document.querySelector("#main").appendChild(movieEl);  
+    
+  });
+}
