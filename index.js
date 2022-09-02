@@ -58,3 +58,11 @@ document.querySelector("#form").addEventListener("submit", function (e) {
     getMovies(api_URL);
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log('Content Loaded') 
+   getMovies(api_URL);
+  }
+
+  
+  );
