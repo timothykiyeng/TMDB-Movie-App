@@ -111,3 +111,18 @@ display: inline-block;
   font-size: 27px;
   font-family: inherit;
   }
+
+  body::-webkit-scrollbar {
+    width: 15px;
+    background: #dadada;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #1e90ff;
+    border-radius: 10px;
+    
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #55a8fb;
+  }
