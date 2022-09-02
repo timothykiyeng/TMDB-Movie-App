@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <form id="form">
+        <input type="text" placeholder="search" id="search" class="search" />
+      </form>
+    </header>
+    <main id="main">
+      <div class="movie">
+        <img class="card-image" src="" alt="image" />
+
+        <div class="header"></div>
+        <div class="card-body"></div>
+        <div class="movie_desc">
+          <h3>$Popular movies</h3>
+        </div>
+        <div justify-content-between>
+          <span id="rate-count" class="likes">Ratings: 0</span>
+
+          
+            <button type= "button" id="ratings-button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Review">Review</button>
+          <br>
+          
+        </div>
+        
+        <div id="overview">
+          <h3>Overview</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magni illo
+          nam veritatis dolorem excepturi nemo voluptas dolore modi recusandae
+          unde exercitationem inventore tempora porro, dolorum corporis
+          accusantium nisi quasi.
+        </div>
+      </div>
+    </main>
+    <!-- Modal for submitting reviews -->
+    <div class="modal fade" id="Review" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Give a Review</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="Comment">Review</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
