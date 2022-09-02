@@ -89,3 +89,19 @@
 .movie_desc{
   font-size: 20px;
 }
+
+#rate-count {
+  font-style: inherit;
+  font-size: 35px;
+}
+
+#ratings-button{
+color: red;
+padding: 5px 12px;
+font-size: 30px;
+border: none;
+text-align: center;
+display: inline-block;
+
+
+}
